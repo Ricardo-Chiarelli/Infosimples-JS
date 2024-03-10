@@ -142,10 +142,8 @@ server.get("/api", async (req, res) => {
       reviews_average_score: averageScore,
       url: url,
     };
-  });
-
-  console.log(reviews);
-
+  });  
+  
   await browser.close();
 
   const organizedData = {
